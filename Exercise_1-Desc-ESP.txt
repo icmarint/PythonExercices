@@ -1,0 +1,56 @@
+ACTIVIDAD 1
+Usted y un grupo de amigos ha decidido realizar una rifa de 1’000.000 de pesos
+para recaudar fondos en pro de los habitantes de calle del municipio en el que
+usted habita.
+La rifa se hará a través de un juego cuyas reglas son las siguientes:
+● Cada participante debe adivinar un número n entre 0 y b (incluídos, b y n
+son los mismos para todos los concursantes).
+● Cada concursante va ingresando números entre 0 y b, y mientras no haya
+acertado, el sistema debe decir si el número ingresado está por encima o
+por debajo del que debe adivinar.
+● Una vez el concursante haya adivinado el número, el sistema deberá
+imprimir a los cuántos intentos el participante logró adivinar el número,
+y será el jurado el encargado de dar como ganador a quien haya
+adivinado en menos intentos.
+TAREAS
+● Conocidos dos números b y n (Con las características mencionadas
+anteriormente) realizar un programa en Python que le permita al
+concursante ingresar números entre 0 y b (Incluídos los dos) hasta que
+adivine el número n, además en cada intento, el programa debe
+imprimir en consola lo siguiente:
+○ Si el número ingresado por el concursante es mayor que n,
+entonces el programa debe imprimir EXACTAMENTE las
+siguientes palabras "¡Ups! Te pasaste" (Sin las comillas).
+○ Si el número ingresado por el concursante es menor a n,
+entonces el programa debe imprimir EXACTAMENTE las
+siguientes palabras "¡Ups! Estás por debajo" (Sin las
+comillas).
+○ Si el número ingresado por el concursante es igual a n, entonces
+el programa debe imprimir EXACTAMENTE las siguientes
+palabras "¡LO LOGRASTE! Usaste x intentos" (Sin las
+comillas) donde x denota la cantidad de intentos que hizo el
+concursante para poder adivinar.
+
+○ Si el número ingresado por el concursante es menor o mayor que
+0 y b respectivamente, entonces el programa debe imprimir
+EXACTAMENTE las siguientes palabras "¡Te saliste del
+intervalo!" (No cuenta como intento).
+
+Notas:
+1. Debe usar la función input y agregar algún mensaje, por ejemplo:
+input("Ingrese un número: ").
+2. Debe usar la función print haciendo uso de UN SOLO argumento (Solo
+limítese a imprimir los mensajes solicitados con mayúsculas, espacios y
+signos de admiración), es decir, solo puede usar la función print de la
+siguiente manera: print("¡Ups! Estás por debajo"),
+print("¡Ups! Te pasaste"), print("¡ Te saliste del intervalo!"), o
+print(f"¡ LO LOGRASTE! Usaste {cantidad_intentos} intentos")
+dependiendo del caso (NO usar parámetros como end, ni sep ).
+3. EL SISTEMA DE CALIFICACIÓN HARÁ LAS VECES DE CONCURSANTE.
+FORMATO DE ENTRADA
+La función solucion(b, n) recibe como parámetros:
+● b: Número natural mayor o igual a 30.
+● n: Número que el participante debe adivinar que está entre 0 y b
+incluídos.
+Nota: Usted no debe preocuparse por ingresar estos números, el sistema se los
+brinda, asuma que b es mayor o igual que 30 y n es un número entre 0 y b
